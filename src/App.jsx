@@ -16,16 +16,18 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <header>
-        <div className="header-title text-gradient">Mukundh Arul</div>
+    <div className="w-full h-screen max-w-[500px] sm:max-h-[888px] relative bg-bg-primary flex flex-col sm:border sm:border-border-primary sm:rounded-3xl sm:shadow-2xl sm:overflow-hidden transition-all duration-300">
+      <header className="px-6 py-4 flex justify-between items-center border-b border-border-primary sticky top-0 bg-card-bg backdrop-blur-md z-50">
+        <div className="font-semibold text-lg tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-text-primary to-text-secondary">
+          Mukundh Arul
+        </div>
         <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       </header>
       
-      <div className="scroll-area">
+      <div className="flex-1 overflow-y-auto overflow-x-hidden no-scrollbar">
         <ProfileHeader />
-        <div style={{ padding: '24px 24px 8px 24px' }}>
-          <h2 style={{ fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--text-secondary)' }}>Connect</h2>
+        <div className="px-8 pt-6 pb-2">
+          <h2 className="text-sm uppercase tracking-widest text-text-secondary font-mono">Connect</h2>
         </div>
         <SocialLinks />
       </div>

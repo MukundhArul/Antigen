@@ -11,14 +11,14 @@ export default function SocialLinks() {
   ];
 
   return (
-    <section className="social-grid">
+    <section className="flex flex-wrap gap-3 px-8 pb-8">
       {socials.map((social, index) => (
         <a 
           key={index} 
           href={social.url} 
           target="_blank" 
           rel="noopener noreferrer"
-          className="social-button"
+          className="flex items-center justify-center w-12 h-12 rounded-xl border border-border-primary bg-bg-primary text-text-secondary transition-all duration-200 hover:border-text-primary hover:text-text-primary hover:bg-border-primary hover:-translate-y-0.5"
           aria-label={social.label}
         >
           {social.icon}
