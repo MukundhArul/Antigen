@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sqlalchemy[asyncio]
+aiosqlite
+langgraph
+langchain-core
+pydantic
+pydantic-settings
+pytest
+pytest-asyncio
